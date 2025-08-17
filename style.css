@@ -1,9 +1,9 @@
 /* ================= Body & Container ================= */
 body {
-    max-width: 500px;
+    max-width: 600px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
     background: #fffefc;
 }
 
@@ -24,7 +24,7 @@ h3::after{
     content: "";
     display: block;
     background-color: #050505;
-    width: 300px;
+    width: 40%;
     height: 0.2rem;
     margin: 3px auto 0 auto;
 }
@@ -33,20 +33,52 @@ h1::after {
     content: "";
     display: block;
     background-color: #050505;
-    width: 200px;
+    width: 30%;
     height: 0.2rem;
     margin: 3px auto 0 auto;
 }
 
 /* ================= Section Headings ================= */
 h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
     border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
+    padding-top: 25px; 
+    padding-bottom: 15px; 
     text-transform: capitalize;
+    gap: 0;
 }
 
+
+/* ================= side Headings ================= */
+
+.font{
+font-family: 'Pacifico', cursive;
+font-size: 120%;
+}
+#info p {
+    margin: 0px;
+    padding: 0px;
+}
+#info{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    margin-top: -80px;
+    
+    font-size: small;
+}
+#right { 
+
+
+} 
+
+#left {
+    text-align: left;
+}
 /* ================= Menu Items ================= */
 .menu-items {
     display: flex;
@@ -55,6 +87,7 @@ h2 {
     flex-wrap: wrap;
     padding: 10px;
     border-bottom: 1px dotted #ccc;
+     gap: 0;
     /* margin: 5px 0 0 0; */
     /* color: #555; */
 }
@@ -79,10 +112,14 @@ h2 {
     border:2px solid black;
     padding: 20px;
     margin: 0 auto;
-    background-color: rgb(118, 155, 236);
+   
   max-width: 700px;
    text-align: center;
 }
+#contacts{
+    font-size: smaller;
+}
+
 
 
 /* ================= Responsive ================= */
@@ -93,7 +130,11 @@ h2 {
     }
 }
 
-
+@media (max-width :485px){
+    .info{
+        font-size: smaller;
+    }
+}
 /* ================= Grid Layout for Dessert & Drinks ================= */
 /* 
 
@@ -129,3 +170,8 @@ h2 {
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     transition: 0.3s;
 } */
+
+
+
+
+
