@@ -75,6 +75,14 @@ h2 {
     color: #333;
 }
 
+#container{
+    border:2px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgb(118, 155, 236);
+  max-width: 700px;
+   text-align: center;
+}
 
 
 /* ================= Responsive ================= */
@@ -84,6 +92,7 @@ h2 {
         align-content: flex-start;
     }
 }
+
 
 /* ================= Grid Layout for Dessert & Drinks ================= */
 /* 
